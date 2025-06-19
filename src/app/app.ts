@@ -27,7 +27,11 @@ export class App {
   protected title = 'angular20';
 
   // Extended template expression syntax
-   
+  n = 2;
+  person = {
+    name: 'A',
+  };
+  colWidth = 2;
 
   //Host binding type check
   isActive = true;
