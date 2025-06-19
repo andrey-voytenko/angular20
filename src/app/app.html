@@ -332,5 +332,13 @@
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<p>{{ n ** 8}}</p>
+<p>{{ 'name' in person ? 't' : 'f' }}</p>
+<div [class]="`layout col-${colWidth}`">here</div>
+<div [ngClass]="['layout', 'col-' + colWidth]">here</div>
 
+<div #dynamic></div>
+<button (click)="createDynamicComponent()">Create component</button>
+<p>{{outputValue()}}</p>
+<p>timer: {{timer()}}</p>
 <router-outlet />
